@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+var node_dir = './node_modules/';
 
 elixir(function(mix) {
  mix
@@ -40,6 +41,12 @@ elixir(function(mix) {
       * Combine frontend scripts
       */
      .scripts([
+        node_dir + 'bootstrap-select/dist/js/bootstrap-select.min.js',
+        node_dir + 'bootstrap-select/dist/js/bootstrap-select.min.js',
+        node_dir + 'jquery-mask-plugin/dist/jquery.mask.min.js',
+        node_dir + 'jquery-validation/dist/jquery.validate.js',
+        node_dir + 'normalize/lib/normalize.js',
+        node_dir + 'html5shiv/dist/html5shiv.js',
         'plugin/sweetalert/sweetalert.min.js',
         'plugins.js',
         'frontend/app.js'

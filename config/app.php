@@ -16,12 +16,12 @@ return [
     'env' => env('APP_ENV', 'production'),
 
     /*
-	|--------------------------------------------------------------------------
-	| Application Name
-	|--------------------------------------------------------------------------
-	|
-	| The application name for use within the UI of the application
-	*/
+    |--------------------------------------------------------------------------
+    | Application Name
+    |--------------------------------------------------------------------------
+    |
+    | The application name for use within the UI of the application
+    */
     'name' => 'Laravel 5 Bootstrap',
 
     /*
@@ -61,7 +61,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Chicago',
 
     /*
     |--------------------------------------------------------------------------
@@ -111,9 +111,9 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', '3JDEQExkhh2fC1BqZNd9DIXtEUpz7vsn'),
 
-    'cipher' => 'AES-256-CBC',
+    'cipher' => MCRYPT_RIJNDAEL_128,
 
     /*
     |--------------------------------------------------------------------------
@@ -193,6 +193,9 @@ return [
          * Has to override the Collective\Html\HtmlServiceProvider form singleton
          */
         App\Providers\MacroServiceProvider::class,
+
+        //Added by moneil
+         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
     ],
 
     /*
@@ -249,6 +252,7 @@ return [
         'Gravatar'    => Creativeorange\Gravatar\Facades\Gravatar::class,
         'Html'        => Collective\Html\HtmlFacade::class,
         'Socialite'   => Laravel\Socialite\Facades\Socialite::class,
+        'FormBuilder' => Kris\LaravelFormBuilder\Facades\FormBuilder::class
     ],
 
 ];

@@ -1,6 +1,6 @@
 {
-    "name": "rappasoft/laravel-5-boilerplate",
-    "description": "The Laravel Framework Boilerplate Project.",
+    "name": "asugrad/laravel-5-boilerplate",
+    "description": "Fork of The Laravel Framework Boilerplate Project.",
     "keywords": ["framework", "laravel", "boilerplate"],
     "license": "MIT",
     "type": "project",
@@ -13,7 +13,15 @@
         "creativeorange/gravatar": "~1.0",
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "hieu-le/active": "~2.0",
-        "arcanedev/log-viewer": "~3.0"
+        "arcanedev/log-viewer": "~3.0",
+        "kris/laravel-form-builder": "1.6.*",
+        "barryvdh/laravel-debugbar": "~2.0",
+        "maatwebsite/excel": "~2.0.0",
+        "proengsoft/laravel-jsvalidation": "~1.1",
+        "laracasts/flash": "*",
+        "league/csv": "^7.2",
+        "goodby/csv": "*",
+        "jenssegers/agent": "^2.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
